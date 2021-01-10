@@ -6,7 +6,8 @@ body {
   font-weight: 300;
   color: #fff;
   max-width: 1024px;
-  padding: 0px 12px; }
+  padding: 0px 12px;
+  margin: auto; }
 
 .sections-outer {
   max-width: 620px;

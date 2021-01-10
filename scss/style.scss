@@ -9,12 +9,13 @@ body {
     font-weight: 300;
     color: $color-white;
     max-width: 1024px;
+    padding: 0px 12px;
 }
 
 .sections-outer {
     max-width: 620px;
     margin: auto;
-    padding: 0px 12px;
+
 
 }
 
@@ -56,6 +57,7 @@ header {
         color:$color-white;
         text-decoration: none;
         font-weight: bold;
+        outline: none;
 
         img {
             width: 20px;
@@ -134,7 +136,6 @@ header {
 .timer {
     padding: 20px 0px 20px;
     width: 100%;
-    min-height: 262px;
     border-radius: 6px;
     margin-top: 40px;
     background-color: $color-light-red;

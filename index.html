@@ -12,104 +12,111 @@
 <body>
     <main>
         <header>
-            <div class="logo">
-                <a href="https://orisios.github.io/pomodoro">
-                    <img src="img/icon-white.png" alt="Иконка">
-                    Помодоро
-                </a>
-            </div>
+            <section class="header-inner">
+                <div class="logo test">
+                    <a href="https://orisios.github.io/pomodoro">
+                        <img src="img/icon-white.png" alt="Иконка">
+                        Помодоро
+                    </a>
+                </div>
 
-            <div class="items">
-                <button class="settings"> 
-                    <img src="img/config-white.png" alt="Настройки">
-                    Настройки
-                </button>
-                <button class="login">
-                    <img src="img/user-white.png" alt="Войти">
-                    Войти
-                </button>
-            </div>
+                <div class="items test">
+                    <button class="settings"> 
+                        <img src="img/config-white.png" alt="Настройки">
+                        <div class="settings-text">Настройки</div>
+                    </button>
+                    <button class="login test">
+                        <img src="img/user-white.png" alt="Войти">
+                        <div class="login-text">Войти</div>
+                    </button>
+                </div>
+            </section>
         </header>
 
-        <section class="sections">
-            <section class="timer">
 
-                <div class="timer-type">
-                    <div class="timer-type-pomodoro">
-                        Помодоро
-                    </div>
-                    <div class="timer-type-short-break">
-                        Короткий Перерыв
-                    </div>
-                    <div class="timer-type-long-break">
-                        Длинный Перерыв
-                    </div>
-                </div>
-                <div class="timer-dial-button">
-                    <div class="timer-dial">
-                        25:00
-                    </div>
-                    <button class="timer-button">
-                        СТАРТ
-                    </button>
-                </div>
-            </section>
-            <section class="tasks">
-                <div class="tasks-title">
-                    ТЕКУЩАЯ ЗАДАЧА
-                </div>
-                <div class="tasks-title-name">
-                    Вёрстка Помодоро
-                </div>
-                <div class="tasks-list">
-                    <div class="tasks-list-title">
-                        <div class="tasks-list-title-title">
-                            Задачи
+        <div class="sections-outer">
+            <section class="sections">
+                <div class="timer-conteiner">
+                    <section class="timer">
+
+                        <div class="timer-type">
+                            <div class="timer-type-pomodoro">
+                                Помодоро
+                            </div>
+                            <div class="timer-type-short-break">
+                                Короткий Перерыв
+                            </div>
+                            <div class="timer-type-long-break">
+                                Длинный Перерыв
+                            </div>
                         </div>
-                        <img src="img/threedots-white.png" alt="Троеточие" class="task-list-title-img">
-                    </div>
-                    <div class="tasks-list-list">
-                        <div class="tasks-list-list-name">
-                            <img src="img/icon-white.png" alt="Иконка белая">
+                        <div class="timer-dial-button">
+                            <div class="timer-dial">
+                                25:00
+                            </div>
+                            <button class="timer-button">
+                                СТАРТ
+                            </button>
+                        </div>
+                    </section>
+                    <section class="tasks">
+                        <div class="tasks-title">
+                            ТЕКУЩАЯ ЗАДАЧА
+                        </div>
+                        <div class="tasks-title-name">
                             Вёрстка Помодоро
                         </div>
-                        <div class="tasks-list-list-count">
-                            <div class="tasks-list-list-count-count">
-                                5/16
+                        <div class="tasks-list">
+                            <div class="tasks-list-title">
+                                <div class="tasks-list-title-title">
+                                    Задачи
+                                </div>
+                                <img src="img/threedots-white.png" alt="Троеточие" class="task-list-title-img">
                             </div>
-                            <img src="img/vertical-ellipsis.png" alt="Вертикальное троеточие" class="tasks-list-list-count-img">
-                        </div>
-                    </div>
-                    <div class="tasks-list-list-2">
-                        <div class="tasks-list-list-2-name">
-                            <img src="img/icon-white.png" alt="">
-                            Статья
-                        </div>
-                        <div class="tasks-list-list-2-count">
-                            <div class="tasks-list-list-2-count-count">
-                                0/16
+                            <div class="tasks-list-list">
+                                <div class="tasks-list-list-name">
+                                    <img src="img/icon-white.png" alt="Иконка белая">
+                                    Вёрстка Помодоро
+                                </div>
+                                <div class="tasks-list-list-count">
+                                    <div class="tasks-list-list-count-count">
+                                        5/16
+                                    </div>
+                                    <img src="img/vertical-ellipsis.png" alt="Вертикальное троеточие" class="tasks-list-list-count-img">
+                                </div>
                             </div>
-                            <img src="img/vertical-ellipsis.png" alt="Вертикальное троеточие" class="tasks-list-list-2-count-img">
+                            <div class="tasks-list-list-2">
+                                <div class="tasks-list-list-2-name">
+                                    <img src="img/icon-white.png" alt="">
+                                    Статья
+                                </div>
+                                <div class="tasks-list-list-2-count">
+                                    <div class="tasks-list-list-2-count-count">
+                                        0/16
+                                    </div>
+                                    <img src="img/vertical-ellipsis.png" alt="Вертикальное троеточие" class="tasks-list-list-2-count-img">
+                                </div>
+                            </div>
+                            <button class="tasks-list-button">
+                                <img src="img/plus-circle-white.png" alt="plus-circle-white">
+                                Добавить задачу
+                            </button>
+                            <div class="tasks-list-score">
+                                <div class="tasks-list-score-est">Пред: 
+                                    <div class="tasks-list-score-est-value">16</div>
+                                </div>
+                                <div class="tasks-list-score-act">Акт: 
+                                    <div class="tasks-list-score-act-value">5</div>
+                                </div>
+                                <div class="tasks-list-score-end">Завершение: 
+                                    <div class="tasks-list-score-end-value">19:41</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <button class="tasks-list-button">
-                        <img src="img/plus-circle-white.png" alt="plus-circle-white">
-                        Добавить задачу
-                    </button>
-                    <div class="tasks-list-score">
-                        <div class="tasks-list-score-est">Пред: 
-                            <div class="tasks-list-score-est-value">16</div>
-                        </div>
-                        <div class="tasks-list-score-act">Акт: 
-                            <div class="tasks-list-score-act-value">5</div>
-                        </div>
-                        <div class="tasks-list-score-end">Завершение: 
-                            <div class="tasks-list-score-end-value">19:41</div>
-                        </div>
-                    </div>
+                    </section>
                 </div>
             </section>
-        </section>
+        </div>
     </main>
 </body>
 </html>

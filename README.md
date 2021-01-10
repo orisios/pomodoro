@@ -1,2 +1,2 @@
-# pomodoro.github.io
-Pomodoro timer
+# orisios.github.io/pomodoro
+MarkUp Pomodoro timer

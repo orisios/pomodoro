@@ -2,27 +2,52 @@ $color-white: #fff;
 $color-light-red: rgba(255, 255, 255, 0.1);
 
 body {
-    display: flex;
     justify-content: center;
     text-align: center;
     background-color: rgb(219, 82, 77);
     font-family: 'M PLUS Rounded 1c', 'ArialRounded', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
     font-weight: 300;
     color: $color-white;
+    max-width: 1024px;
+}
+
+.sections-outer {
+    max-width: 620px;
+    margin: auto;
+    padding: 0px 12px;
 
 }
 
 .sections {
-    width: 620px;
-    height: 746px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-height: 746px;
+
+
+}
+
+main {
+
 }
 
 header {
-    height: 60px;
-    border-bottom: thin solid #c54a45;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    max-width: 620px;
+    margin: auto;
+    .header-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+
+        min-height: 60px;
+        border-bottom: thin solid #c54a45;
+        
+
+        .test {
+        }
+    }
 }
 
 .logo {
@@ -66,7 +91,11 @@ header {
         color: $color-white;
         border: 0;
         border-radius: 4;
-        
+        &-text {
+            @media screen and (max-width: 300px) {
+                display:none;
+            }
+        }
         
         img {
             width: 18px;
@@ -85,6 +114,13 @@ header {
         color: $color-white;
         font-size: 13px;
         outline: none;
+
+        &-text {
+            @media screen and (max-width: 300px) {
+                display:none;
+            }
+        }
+
         img {
             width: 18px;
             height: 18px;
@@ -97,12 +133,13 @@ header {
 
 .timer {
     padding: 20px 0px 20px;
-    width: 480px;
-    height: 262px;
+    width: 100%;
+    min-height: 262px;
     border-radius: 6px;
     margin-top: 40px;
     background-color: $color-light-red;
-    margin-left: 70px;
+
+
     &-type {
         display: flex;
         justify-content: center;
@@ -112,6 +149,7 @@ header {
             padding: 2px 12px;
             border-radius: 4px;
             background: rgba(0, 0, 0, 0.15) none repeat scroll 0% 0%;
+            height: 18px;
         }
         &-short-break {
             padding: 2px 12px;
@@ -129,6 +167,10 @@ header {
         font-size: 120px;
         font-weight: bold;
         margin-top: 20px;
+        @media screen and (max-width: 680px) {
+            font-size: 100px;
+            min-height: fit-content;
+        }
     }
     button {
         cursor: pointer;
@@ -141,7 +183,7 @@ header {
         height: 55px;
         color: rgb(219, 82, 77);
         font-weight: bold;
-        width: 200px;
+        width: 41.66%;
         background-color: white;
         transition: color 0.5s ease-in-out 0s;
         outline: none;
@@ -149,9 +191,9 @@ header {
 }
 
 .tasks {
-    margin-left: 70px;
+
     margin-top: 20px;
-    width: 480px;
+    width: 100%;
     &-title {
         font-size: 13px;
         opacity: 0.6;
@@ -321,6 +363,10 @@ header {
                 &-value {
                     margin-left: 4px;
                 }
+            }
+
+            @media screen {
+                flex-wrap: wrap;
             }
         }
     }

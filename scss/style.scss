@@ -93,6 +93,7 @@ header {
         color: $color-white;
         border: 0;
         border-radius: 4;
+        opacity: .8;
         &-text {
             @media screen and (max-width: 300px) {
                 display:none;
@@ -116,6 +117,7 @@ header {
         color: $color-white;
         font-size: 13px;
         outline: none;
+        opacity: .8;
 
         &-text {
             @media screen and (max-width: 300px) {
@@ -187,7 +189,7 @@ header {
         width: 41.66%;
         background-color: white;
         transition: color 0.5s ease-in-out 0s;
-        outline: none;
+        outline: none;   
     }
 }
 
@@ -218,6 +220,13 @@ header {
             img {
                 width: 16px;
                 height: 16px;
+                background-color: rgba(255, 255, 255, 0.2);
+                border-radius: 4px;
+                padding: 8px;
+                opacity: .8;
+                &:hover {
+                    opacity: 1;
+                }
             }
             &-title {}
         }
@@ -265,6 +274,10 @@ header {
                     color: #dfdfdf;
                     padding: 2px 4px;
                     border: 1px solid rgb(223, 223, 223);
+                    opacity: .4;
+                    &:hover {
+                        background-color: rgb(223, 223, 223);
+                    }
                 }
             }
         }
@@ -294,6 +307,7 @@ header {
                     margin-right: 10px;
                     border-radius: 50%;
                     margin: 0px 10px;
+
                 }
             }
             &-count {
@@ -311,6 +325,11 @@ header {
                     color: #dfdfdf;
                     padding: 2px 4px;
                     border: 1px solid rgb(223, 223, 223);
+                    opacity: .4;
+
+                    &:hover {
+                        background-color: rgb(223, 223, 223);
+                    }
                 }
             }
         }
@@ -371,4 +390,8 @@ header {
             }
         }
     }
+}
+
+.settings:hover, .login:hover, .tasks-list-button:hover {
+    opacity: 1;
 }

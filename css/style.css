@@ -141,6 +141,9 @@ header {
     background-color: white;
     transition: color 0.5s ease-in-out 0s;
     outline: none; }
+    .timer button:active {
+      font-weight: 300;
+      box-shadow: #ebebeb 0px 0px 0px; }
 
 .tasks {
   margin-top: 20px;

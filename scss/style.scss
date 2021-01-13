@@ -189,7 +189,12 @@ header {
         width: 41.66%;
         background-color: white;
         transition: color 0.5s ease-in-out 0s;
-        outline: none;   
+        outline: none; 
+        
+        &:active {
+            font-weight: 300;
+            box-shadow: rgb(235, 235, 235) 0px 0px 0px;
+        }
     }
 }
 
